@@ -18,35 +18,35 @@
  * @package WordPress
  */
 
-// Sendgrid settings - Read in the sendgrid auth from the config //
-define('SENDGRID_USERNAME', $_ENV["SENDGRID_USERNAME"]);
-define('SENDGRID_PASSWORD', $_ENV["SENDGRID_PASSWORD"]); 
+// // Sendgrid settings - Read in the sendgrid auth from the config //
+// define('SENDGRID_USERNAME', $_ENV["SENDGRID_USERNAME"]);
+// define('SENDGRID_PASSWORD', $_ENV["SENDGRID_PASSWORD"]); 
   
-// S3 Config Info - read the S3 Access Keys from the config //
-define( 'AWS_ACCESS_KEY_ID', $_ENV["AWS_ACCESS_KEY_ID"]);
-define( 'AWS_SECRET_ACCESS_KEY', $_ENV["AWS_SECRET_ACCESS_KEY"]);  
+// // S3 Config Info - read the S3 Access Keys from the config //
+// define( 'AWS_ACCESS_KEY_ID', $_ENV["AWS_ACCESS_KEY_ID"]);
+// define( 'AWS_SECRET_ACCESS_KEY', $_ENV["AWS_SECRET_ACCESS_KEY"]);  
 
 // ** Heroku Postgres settings - from Heroku Environment ** //
 $db = parse_url($_ENV["DATABASE_URL"]);
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', trim($db["path"],"/"));
+// define('DB_NAME', trim($db["path"],"/"));
 
-/** MySQL database username */
-define('DB_USER', $db["user"]);
+// /** MySQL database username */
+// define('DB_USER', $db["user"]);
 
-/** MySQL database password */
-define('DB_PASSWORD', $db["pass"]);
+// /** MySQL database password */
+// define('DB_PASSWORD', $db["pass"]);
 
-/** MySQL hostname */
-define('DB_HOST', $db["host"]);
+// /** MySQL hostname */
+// define('DB_HOST', $db["host"]);
 
-/** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
+// /** Database Charset to use in creating database tables. */
+// define('DB_CHARSET', 'utf8');
 
-/** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
+// /** The Database Collate type. Don't change this if in doubt. */
+// define('DB_COLLATE', '');
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -57,16 +57,16 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         $_ENV["AUTH_KEY"]);
-define('SECURE_AUTH_KEY',  $_ENV["SECURE_AUTH_KEY"]);
-define('LOGGED_IN_KEY',    $_ENV["LOGGED_IN_KEY"]);
-define('NONCE_KEY',        $_ENV["NONCE_KEY"]);
-define('AUTH_SALT',        $_ENV["AUTH_SALT"]);
-define('SECURE_AUTH_SALT', $_ENV["SECURE_AUTH_SALT"]);
-define('LOGGED_IN_SALT',   $_ENV["LOGGED_IN_SALT"]);
-define('NONCE_SALT',       $_ENV["NONCE_SALT"]);
+// define('AUTH_KEY',         $_ENV["AUTH_KEY"]);
+// define('SECURE_AUTH_KEY',  $_ENV["SECURE_AUTH_KEY"]);
+// define('LOGGED_IN_KEY',    $_ENV["LOGGED_IN_KEY"]);
+// define('NONCE_KEY',        $_ENV["NONCE_KEY"]);
+// define('AUTH_SALT',        $_ENV["AUTH_SALT"]);
+// define('SECURE_AUTH_SALT', $_ENV["SECURE_AUTH_SALT"]);
+// define('LOGGED_IN_SALT',   $_ENV["LOGGED_IN_SALT"]);
+// define('NONCE_SALT',       $_ENV["NONCE_SALT"]);
 
-/**#@-*/
+// /**#@-*/
 
 /**
  * WordPress Database Table prefix.
